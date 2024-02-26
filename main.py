@@ -34,14 +34,14 @@ Sor_txt = Text(frame,font= ("Times new Roman",20,"bold"),wrap = WORD)
 Sor_txt.place(x=10,y=140,height=200,width=480)
 
 list_text= list(LANGUAGES.values())
-comb_sor = ttk.Combobox(frame,value = list_text)
+comb_sor = ttk.Combobox(frame)
 comb_sor.place(x=10,y=360,height=40,width=150)
 comb_sor.set("English")
 
 button_change = Button(frame,text = "Translate",relief = RAISED,command = data)
 button_change.place(x=170,y=360,height=40,width=120)
 
-comb_dest = ttk.Combobox(frame,value = list_text)
+comb_dest = ttk.Combobox(frame)
 comb_dest.place(x=300,y=360,height=40,width=180)
 comb_dest.set("English")
 
