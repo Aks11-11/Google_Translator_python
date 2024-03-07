@@ -6,7 +6,6 @@ def change(text="type", src="English", dest="Hindi"):
     text1 = text
     src1 = src
     dest1 = dest
-
     trans = Translator()
     trans1 = trans.translate(text=text1, src=src1, dest=dest1)
     return trans1.text
